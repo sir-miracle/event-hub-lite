@@ -130,10 +130,10 @@ Colors are defined in `src/utils/theme/colors/Colors.ts` and can be easily custo
 The app uses a custom scaling system in `src/utils/scaling.ts` for responsive design.
 
 ### Icons
-Currently using emoji icons. Replace with your preferred icon library:
+Currently using emoji icons. I can replace with preferred icon library:
 - `react-native-vector-icons`
 - `react-native-svg`
-- Custom icon components
+- Custom icon components from real figma designs, which is the best for me
 
 ## Performance Considerations
 
@@ -141,48 +141,3 @@ Currently using emoji icons. Replace with your preferred icon library:
 - **Image Optimization**: Thumbnails are loaded efficiently
 - **Memory Management**: Proper cleanup of listeners and subscriptions
 - **Database Optimization**: Efficient queries and indexing
-
-## Testing
-
-The app includes basic test setup with Jest. Run tests with:
-
-```bash
-yarn test
-```
-
-## Future Enhancements
-
-- Real API integration
-- Push notifications
-- User authentication
-- Payment gateway integration
-- Social features
-- Advanced filtering options
-- Event recommendations
-
-## Troubleshooting
-
-### Common Issues
-
-1. **Metro bundler issues**: Clear cache with `yarn start --reset-cache`
-2. **iOS build issues**: Clean and rebuild with `cd ios && xcodebuild clean`
-3. **Android build issues**: Clean gradle with `cd android && ./gradlew clean`
-
-### Database Issues
-
-If you encounter database-related issues:
-1. Clear app data and reinstall
-2. Check SQLite configuration
-3. Verify react-native-sqlite-storage setup
-
-## Contributing
-
-1. Fork the repository
-2. Create a feature branch
-3. Make your changes
-4. Add tests if applicable
-5. Submit a pull request
-
-## License
-
-This project is licensed under the MIT License.
