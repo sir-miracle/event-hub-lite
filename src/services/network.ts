@@ -1,3 +1,9 @@
+/**
+ * This is a typical way I would setup a real network service for an app
+ * But for the sake of the project, I'm using a mock API service
+ */
+
+
 import axios, { AxiosError, AxiosRequestConfig } from 'axios';
 import { store } from '../redux-toolkit/store';
 import { reportError } from '../utils/utility-functions/UntilityFunctions';

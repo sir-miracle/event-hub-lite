@@ -1,9 +1,57 @@
 import { Dimensions } from 'react-native';
+import { Colors } from '../theme/colors/Colors';
+import { EventCategory } from '../../types';
 
 const dimensions = Dimensions.get('window');
 export const height = dimensions.height;
 export const width = dimensions.width;
 export const bottomTabBottomPadding = 105;
+
+export const capitalize = (word: string | undefined) => {
+  if (word == undefined || word == null) return '';
+  return word?.charAt(0).toUpperCase() + word?.slice(1);
+};
+
+export const minHeightForScrollFlex = 810;
+
+export const getCategoryColor = (category: EventCategory): string => {
+  switch (category) {
+    case 'Tech':
+      return Colors.tech;
+    case 'Business':
+      return Colors.business;
+    case 'Health':
+      return Colors.health;
+    case 'Arts':
+      return Colors.arts;
+    case 'Education':
+      return Colors.education;
+    default:
+      return Colors.primaryBlue;
+  }
+};
+
+export const formatPrice = (price: number): string => {
+  return `₦${price.toLocaleString()}`;
+};
+
+export const formatDate = (dateString: string): string => {
+  const date = new Date(dateString);
+  return date.toLocaleDateString('en-US', {
+    month: 'short',
+    day: 'numeric',
+    year: 'numeric',
+  });
+};
+
+export const formatTime = (dateString: string): string => {
+  const date = new Date(dateString);
+  return date.toLocaleTimeString('en-US', {
+    hour: '2-digit',
+    minute: '2-digit',
+    hour12: true,
+  });
+};
 
 // Validation of email
 export const validateEmail = (email: string): boolean => {
@@ -22,51 +70,4 @@ export const validateNumbers = (value: string) => {
     return true;
   }
 };
-
-export const capitalize = (word: string | undefined) => {
-  if (word == undefined || word == null) return '';
-  return word?.charAt(0).toUpperCase() + word?.slice(1);
-};
-
-//check if a string contains a number(s)
-export const containsNumbers = (str: string) => {
-  return /\d/.test(str);
-};
-
-//check if a string contains a special character
-export const containsSpecialCharacter = (str: string) => {
-  return /[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?~]/.test(str);
-};
-
-//check if a string contains a Upper case letter
-export const isUppercaseIncluded = (str: string) => {
-  return /[A-Z]/.test(str);
-};
-
-//check if a string contains a lower case letter
-export const isLowercaseIncluded = (str: string) => {
-  return /[a-z]/.test(str);
-};
-
-export const minHeightForScrollFlex = 810;
-
-export const formatDecimalAmount = (
-  amount: string | number | undefined,
-  digits = 2,
-  canReturnNull = false,
-) => {
-  if (amount == null || amount == undefined || amount == '')
-    return canReturnNull ? null : digits == 2 ? '0.00' : '0.0000';
-
-  if (Number(amount) < 999) return String(amount);
-
-  const _amount = Number(Number(amount)?.toFixed(digits));
-  var formatter = new Intl.NumberFormat('en-US', {
-    style: 'decimal',
-    minimumFractionDigits: digits,
-  });
-
-  return formatter.format(_amount);
-};
-
 export const reportError = (error: any) => {};

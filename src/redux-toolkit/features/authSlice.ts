@@ -5,7 +5,7 @@ type AuthState = {
   lastname?: string;
   isActive?: boolean;
   accessToken?: string;
-  // Add other auth properties here as needed
+  //Other auth properties here as needed
 };
 
 const initialState: AuthState = {};

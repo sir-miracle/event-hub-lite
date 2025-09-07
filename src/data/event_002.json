@@ -1,0 +1,9 @@
+{
+  "id": "evt_002",
+  "title": "Digital Marketing Summit",
+  "description": "Discover the latest trends in digital marketing, social media strategies, and content creation. Network with industry leaders and learn actionable strategies to grow your business online.",
+  "venue": "International Conference Centre, Abuja",
+  "speakers": ["Sarah Williams", "David Brown", "Lisa Chen"],
+  "capacity": 300,
+  "remaining": 120
+}

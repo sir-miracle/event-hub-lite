@@ -2,7 +2,7 @@ import React, { FC } from 'react';
 import { StyleSheet, TouchableOpacity, View, ViewStyle } from 'react-native';
 import { height, width } from '../../utils/utility-functions/UntilityFunctions';
 import Cancel from '../../assets/icons/cancel_icon.svg';
-import { Colors } from '../../utils/theme/colors/Colors';
+import { Colors, getColorVariant } from '../../utils/theme/colors/Colors';
 import { CustomText } from '../../components/atoms';
 import { FontsCatalogue } from '../../assets/fontsCatalogue';
 import Modal from 'react-native-modal';
@@ -85,7 +85,7 @@ const styles = StyleSheet.create({
   stud: {
     width: moderateScale(36),
     height: moderateScale(5),
-    backgroundColor: '#656C754D',
+    backgroundColor: getColorVariant(Colors.dimGreyMedium, '4D'),
     borderRadius: 16,
     alignSelf: 'center',
   },
@@ -119,7 +119,7 @@ const styles = StyleSheet.create({
     borderRadius: 20,
     alignItems: 'center',
     justifyContent: 'center',
-    backgroundColor: '#DEDEDE',
+    backgroundColor: Colors.gainsboro,
   },
   header: {
     color: Colors.raisinBlack,

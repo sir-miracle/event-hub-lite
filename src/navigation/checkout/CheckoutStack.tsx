@@ -1,10 +1,11 @@
 import React from 'react';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
+import { CheckoutStackParamList } from '../../types';
 import Checkout from '../../screens/checkout/Checkout';
 import CheckoutSuccess from '../../screens/checkout/CheckoutSuccess';
 import CheckoutFailure from '../../screens/checkout/CheckoutFailure';
 
-const Stack = createNativeStackNavigator();
+const Stack = createNativeStackNavigator<CheckoutStackParamList>();
 
 const CheckoutStack = () => {
   return (

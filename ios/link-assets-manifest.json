@@ -1,0 +1,17 @@
+{
+  "migIndex": 1,
+  "data": [
+    {
+      "path": "src/assets/fonts/MazzardH-Regular.ttf",
+      "sha1": "1e89576744b6976f56d8ae27d353407a93aa332c"
+    },
+    {
+      "path": "src/assets/fonts/MazzardL-Bold.ttf",
+      "sha1": "447e453216ad216892c56bbec806f799b48eb2f1"
+    },
+    {
+      "path": "src/assets/fonts/MazzardM-SemiBold.ttf",
+      "sha1": "e7825e420611cd61b9c2a1becee03bda4678add5"
+    }
+  ]
+}

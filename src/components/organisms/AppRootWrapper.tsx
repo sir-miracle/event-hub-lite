@@ -47,7 +47,7 @@ const AppRootWrapper: FC<Props> = ({
   headerWrapperStyle,
   contentContainerStyle,
   refreshing = false,
-  onRefresh = () => { },
+  onRefresh = () => {},
   canRefresh = false,
   statusBarbackgroundColor = null,
   statusBarStyle = 'dark-content',
@@ -78,7 +78,8 @@ const AppRootWrapper: FC<Props> = ({
           paddingRight: insets.right,
         },
         safeAreaStyle,
-      ]}>
+      ]}
+    >
       {useStatusBar && (
         <StatusBar
           barStyle={statusBarStyle}
@@ -108,13 +109,13 @@ const AppRootWrapper: FC<Props> = ({
             contentContainerStyle={
               useScrollFlex
                 ? // @ts-ignore
-                {
-                  ...styles.scrollContent,
-                  ...{ flex: 1, justifyContent: 'space-between', padding: 0 },
-                  ...contentContainerStyle,
-                }
+                  {
+                    ...styles.scrollContent,
+                    ...{ flex: 1, justifyContent: 'space-between', padding: 0 },
+                    ...contentContainerStyle,
+                  }
                 : // @ts-ignore
-                { ...styles.scrollContent, ...contentContainerStyle }
+                  { ...styles.scrollContent, ...contentContainerStyle }
             }
             showsVerticalScrollIndicator={false}
             scrollEnabled={enableScroll}
@@ -122,7 +123,8 @@ const AppRootWrapper: FC<Props> = ({
               canRefresh ? (
                 <RefreshControl refreshing={refreshing} onRefresh={onRefresh} />
               ) : undefined
-            }>
+            }
+          >
             {children}
           </KeyboardAwareScrollView>
         </TouchableWithoutFeedback>
@@ -138,7 +140,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     backgroundColor: Colors.white,
     width: '100%',
-    paddingHorizontal: horizontalScale(16),
+    paddingHorizontal: horizontalScale(10),
     marginRight: 'auto',
     marginLeft: 'auto',
     flex: 1,

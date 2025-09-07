@@ -1,0 +1,9 @@
+{
+  "id": "evt_001",
+  "title": "React Native Masterclass",
+  "description": "Learn advanced React Native concepts including performance optimization, custom native modules, and state management. This comprehensive workshop covers everything from basic setup to production deployment.",
+  "venue": "Tech Hub Lagos, Victoria Island",
+  "speakers": ["John Doe", "Jane Smith", "Mike Johnson"],
+  "capacity": 150,
+  "remaining": 45
+}

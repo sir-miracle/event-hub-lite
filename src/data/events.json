@@ -1,0 +1,187 @@
+{
+  "events": [
+    {
+      "id": "evt_001",
+      "title": "React Native Masterclass",
+      "category": "Tech",
+      "startsAt": "2025-02-15T09:00:00Z",
+      "city": "Lagos",
+      "price": 25000,
+      "thumbnail": "https://picsum.photos/seed/evt_001/400/240"
+    },
+    {
+      "id": "evt_002",
+      "title": "Digital Marketing Summit",
+      "category": "Business",
+      "startsAt": "2025-02-20T10:00:00Z",
+      "city": "Abuja",
+      "price": 15000,
+      "thumbnail": "https://picsum.photos/seed/evt_002/400/240"
+    },
+    {
+      "id": "evt_003",
+      "title": "Mental Health Awareness Workshop",
+      "category": "Health",
+      "startsAt": "2025-02-25T14:00:00Z",
+      "city": "Port Harcourt",
+      "price": 8000,
+      "thumbnail": "https://picsum.photos/seed/evt_003/400/240"
+    },
+    {
+      "id": "evt_004",
+      "title": "Contemporary Art Exhibition",
+      "category": "Arts",
+      "startsAt": "2025-03-01T18:00:00Z",
+      "city": "Lagos",
+      "price": 5000,
+      "thumbnail": "https://picsum.photos/seed/evt_004/400/240"
+    },
+    {
+      "id": "evt_005",
+      "title": "AI and Machine Learning Bootcamp",
+      "category": "Education",
+      "startsAt": "2025-03-05T09:00:00Z",
+      "city": "Ibadan",
+      "price": 30000,
+      "thumbnail": "https://picsum.photos/seed/evt_005/400/240"
+    },
+    {
+      "id": "evt_006",
+      "title": "Blockchain Technology Conference",
+      "category": "Tech",
+      "startsAt": "2025-03-10T10:00:00Z",
+      "city": "Lagos",
+      "price": 20000,
+      "thumbnail": "https://picsum.photos/seed/evt_006/400/240"
+    },
+    {
+      "id": "evt_007",
+      "title": "Startup Pitch Competition",
+      "category": "Business",
+      "startsAt": "2025-03-15T15:00:00Z",
+      "city": "Abuja",
+      "price": 12000,
+      "thumbnail": "https://picsum.photos/seed/evt_007/400/240"
+    },
+    {
+      "id": "evt_008",
+      "title": "Yoga and Wellness Retreat",
+      "category": "Health",
+      "startsAt": "2025-03-20T08:00:00Z",
+      "city": "Calabar",
+      "price": 18000,
+      "thumbnail": "https://picsum.photos/seed/evt_008/400/240"
+    },
+    {
+      "id": "evt_009",
+      "title": "Jazz Music Festival",
+      "category": "Arts",
+      "startsAt": "2025-03-25T19:00:00Z",
+      "city": "Lagos",
+      "price": 10000,
+      "thumbnail": "https://picsum.photos/seed/evt_009/400/240"
+    },
+    {
+      "id": "evt_010",
+      "title": "Data Science Workshop",
+      "category": "Education",
+      "startsAt": "2025-03-30T09:00:00Z",
+      "city": "Kano",
+      "price": 22000,
+      "thumbnail": "https://picsum.photos/seed/evt_010/400/240"
+    },
+    {
+      "id": "evt_011",
+      "title": "Mobile App Development",
+      "category": "Tech",
+      "startsAt": "2025-04-05T10:00:00Z",
+      "city": "Lagos",
+      "price": 28000,
+      "thumbnail": "https://picsum.photos/seed/evt_011/400/240"
+    },
+    {
+      "id": "evt_012",
+      "title": "E-commerce Strategy Summit",
+      "category": "Business",
+      "startsAt": "2025-04-10T14:00:00Z",
+      "city": "Abuja",
+      "price": 16000,
+      "thumbnail": "https://picsum.photos/seed/evt_012/400/240"
+    },
+    {
+      "id": "evt_013",
+      "title": "Nutrition and Fitness Seminar",
+      "category": "Health",
+      "startsAt": "2025-04-15T11:00:00Z",
+      "city": "Port Harcourt",
+      "price": 7000,
+      "thumbnail": "https://picsum.photos/seed/evt_013/400/240"
+    },
+    {
+      "id": "evt_014",
+      "title": "Photography Masterclass",
+      "category": "Arts",
+      "startsAt": "2025-04-20T16:00:00Z",
+      "city": "Lagos",
+      "price": 14000,
+      "thumbnail": "https://picsum.photos/seed/evt_014/400/240"
+    },
+    {
+      "id": "evt_015",
+      "title": "Cybersecurity Fundamentals",
+      "category": "Education",
+      "startsAt": "2025-04-25T09:00:00Z",
+      "city": "Ibadan",
+      "price": 25000,
+      "thumbnail": "https://picsum.photos/seed/evt_015/400/240"
+    },
+    {
+      "id": "evt_016",
+      "title": "Cloud Computing Workshop",
+      "category": "Tech",
+      "startsAt": "2025-05-01T10:00:00Z",
+      "city": "Lagos",
+      "price": 32000,
+      "thumbnail": "https://picsum.photos/seed/evt_016/400/240"
+    },
+    {
+      "id": "evt_017",
+      "title": "Financial Planning Seminar",
+      "category": "Business",
+      "startsAt": "2025-05-05T15:00:00Z",
+      "city": "Abuja",
+      "price": 9000,
+      "thumbnail": "https://picsum.photos/seed/evt_017/400/240"
+    },
+    {
+      "id": "evt_018",
+      "title": "Stress Management Workshop",
+      "category": "Health",
+      "startsAt": "2025-05-10T13:00:00Z",
+      "city": "Calabar",
+      "price": 6000,
+      "thumbnail": "https://picsum.photos/seed/evt_018/400/240"
+    },
+    {
+      "id": "evt_019",
+      "title": "African Art Exhibition",
+      "category": "Arts",
+      "startsAt": "2025-05-15T17:00:00Z",
+      "city": "Lagos",
+      "price": 8000,
+      "thumbnail": "https://picsum.photos/seed/evt_019/400/240"
+    },
+    {
+      "id": "evt_020",
+      "title": "Python Programming Bootcamp",
+      "category": "Education",
+      "startsAt": "2025-05-20T09:00:00Z",
+      "city": "Kano",
+      "price": 20000,
+      "thumbnail": "https://picsum.photos/seed/evt_020/400/240"
+    }
+  ],
+  "totalCount": 20,
+  "page": 1,
+  "hasMore": false
+}

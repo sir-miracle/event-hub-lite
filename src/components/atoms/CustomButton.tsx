@@ -42,7 +42,7 @@ const CustomButton: FC<Props> = ({
       disabled={disabled || loading}
     >
       {loading ? (
-        <LoadingIndicator />
+        <LoadingIndicator color={Colors.white} />
       ) : (
         <CustomText style={[styles.labelstyle, labelStyle]}>{label}</CustomText>
       )}

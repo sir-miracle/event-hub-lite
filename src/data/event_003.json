@@ -1,0 +1,9 @@
+{
+  "id": "evt_003",
+  "title": "Mental Health Awareness Workshop",
+  "description": "A comprehensive workshop focusing on mental health awareness, stress management techniques, and building resilience. Learn practical tools for maintaining mental wellness in today's fast-paced world.",
+  "venue": "Health Center, Port Harcourt",
+  "speakers": ["Dr. Amanda Roberts", "Dr. Peter Wilson"],
+  "capacity": 100,
+  "remaining": 25
+}

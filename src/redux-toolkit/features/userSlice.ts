@@ -16,7 +16,7 @@ const userSlice = createSlice({
       state.id = action.payload.id;
       state.firstname = action.payload.firstname;
       state.lastname = action.payload.lastname;
-      // Add other user properties here as needed
+      // Other user properties here as needed
     },
   },
 });

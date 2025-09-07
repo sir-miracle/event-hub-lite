@@ -1,97 +1,188 @@
-This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
+# EventHub Lite
 
-# Getting Started
+A React Native event discovery and ticketing app built with offline-first architecture using SQLite.
 
-> **Note**: Make sure you have completed the [Set Up Your Environment](https://reactnative.dev/docs/set-up-your-environment) guide before proceeding.
+## Features
 
-## Step 1: Start Metro
+### Core Functionality
+- **Event Discovery**: Browse paginated events with search and category filtering
+- **Event Details**: View comprehensive event information including speakers, venue, and availability
+- **Favorites**: Save events for offline access with persistent storage
+- **Checkout**: Complete ticket purchase with form validation and success/failure handling
+- **Offline Support**: Full offline functionality with cached data and favorites
 
-First, you will need to run **Metro**, the JavaScript build tool for React Native.
+### Technical Features
+- **Offline-First Architecture**: SQLite for local data persistence
+- **Mock API**: Simulated network calls with configurable latency and failure rates
+- **Clean Architecture**: Separated concerns with services, components, and navigation
+- **TypeScript**: Full type safety throughout the application
+- **Responsive Design**: Adaptive UI with proper scaling for different screen sizes
+- **Accessibility**: Screen reader support and dynamic type compatibility
 
-To start the Metro dev server, run the following command from the root of your React Native project:
+## Project Structure
 
-```sh
-# Using npm
-npm start
-
-# OR using Yarn
-yarn start
+```
+src/
+├── components/
+│   ├── atoms/           # Basic UI components (Button, Input, Text)
+│   ├── molecules/       # Composite components (EventCard, SearchBar, etc.)
+│   └── organisms/       # Complex components (AppRootWrapper)
+├── navigation/          # Navigation configuration
+├── screens/            # Screen components
+├── services/           # Business logic and API services
+├── database/           # SQLite database configuration
+├── types/              # TypeScript type definitions
+├── utils/              # Utility functions and helpers
+└── data/               # Mock data files
 ```
 
-## Step 2: Build and run your app
+## Setup Instructions
 
-With Metro running, open a new terminal window/pane from the root of your React Native project, and use one of the following commands to build and run your Android or iOS app:
+### Prerequisites
+- Node.js (>= 20)
+- React Native CLI
+- iOS Simulator (for iOS development)
+- Android Studio (for Android development)
 
-### Android
+### Installation
 
-```sh
-# Using npm
-npm run android
+1. **Clone the repository**
+   ```bash
+   git clone <repository-url>
+   cd EventHubLite
+   ```
 
-# OR using Yarn
-yarn android
+2. **Install dependencies**
+   ```bash
+   yarn install
+   ```
+
+3. **iOS Setup**
+   ```bash
+   cd ios && pod install && cd ..
+   ```
+
+4. **Run the app**
+   ```bash
+   # iOS
+   yarn ios
+   
+   # Android
+   yarn android
+   ```
+
+## Architecture
+
+### Data Layer
+- **SQLite**: Local SQLite database for offline storage
+- **Mock API Service**: Simulates network calls with configurable delays and failure rates
+- **Database Service**: Handles data persistence and retrieval
+
+### State Management
+- **Redux Toolkit**: Global state management
+- **Local State**: React hooks for component-level state
+
+### Navigation
+- **React Navigation**: Stack and tab navigation
+- **Type-safe**: Full TypeScript support for navigation parameters
+
+## Key Components
+
+### EventCard
+Displays event information with thumbnail, title, date, location, and price. Includes favorite toggle functionality.
+
+### SearchBar
+Real-time search with clear functionality and focus states.
+
+### CategoryFilter
+Horizontal scrollable category filter with visual indicators.
+
+### EventDetails
+Comprehensive event view with speakers, venue information, and availability status.
+
+### Checkout
+Form validation and payment processing with success/failure handling.
+
+## Offline Functionality
+
+The app is designed to work seamlessly offline:
+
+1. **Data Caching**: Events are cached locally when first loaded
+2. **Favorites Persistence**: Favorite events are stored locally and available offline
+3. **Graceful Degradation**: App falls back to cached data when network is unavailable
+4. **Cache Management**: Old cached data is automatically cleaned up
+
+## Mock API
+
+The app includes a comprehensive mock API that simulates real-world conditions:
+
+- **Configurable Latency**: 300-800ms response times
+- **Failure Simulation**: 10% chance of network failures
+- **Realistic Data**: 60 sample events across 5 categories
+- **Validation**: Proper input validation and error handling
+
+## Customization
+
+### Colors
+Colors are defined in `src/utils/theme/colors/Colors.ts` and can be easily customized.
+
+### Scaling
+The app uses a custom scaling system in `src/utils/scaling.ts` for responsive design.
+
+### Icons
+Currently using emoji icons. Replace with your preferred icon library:
+- `react-native-vector-icons`
+- `react-native-svg`
+- Custom icon components
+
+## Performance Considerations
+
+- **Lazy Loading**: Events are loaded in pages of 10
+- **Image Optimization**: Thumbnails are loaded efficiently
+- **Memory Management**: Proper cleanup of listeners and subscriptions
+- **Database Optimization**: Efficient queries and indexing
+
+## Testing
+
+The app includes basic test setup with Jest. Run tests with:
+
+```bash
+yarn test
 ```
 
-### iOS
+## Future Enhancements
 
-For iOS, remember to install CocoaPods dependencies (this only needs to be run on first clone or after updating native deps).
+- Real API integration
+- Push notifications
+- User authentication
+- Payment gateway integration
+- Social features
+- Advanced filtering options
+- Event recommendations
 
-The first time you create a new project, run the Ruby bundler to install CocoaPods itself:
+## Troubleshooting
 
-```sh
-bundle install
-```
+### Common Issues
 
-Then, and every time you update your native dependencies, run:
+1. **Metro bundler issues**: Clear cache with `yarn start --reset-cache`
+2. **iOS build issues**: Clean and rebuild with `cd ios && xcodebuild clean`
+3. **Android build issues**: Clean gradle with `cd android && ./gradlew clean`
 
-```sh
-bundle exec pod install
-```
+### Database Issues
 
-For more information, please visit [CocoaPods Getting Started guide](https://guides.cocoapods.org/using/getting-started.html).
+If you encounter database-related issues:
+1. Clear app data and reinstall
+2. Check SQLite configuration
+3. Verify react-native-sqlite-storage setup
 
-```sh
-# Using npm
-npm run ios
+## Contributing
 
-# OR using Yarn
-yarn ios
-```
+1. Fork the repository
+2. Create a feature branch
+3. Make your changes
+4. Add tests if applicable
+5. Submit a pull request
 
-If everything is set up correctly, you should see your new app running in the Android Emulator, iOS Simulator, or your connected device.
+## License
 
-This is one way to run your app — you can also build it directly from Android Studio or Xcode.
-
-## Step 3: Modify your app
-
-Now that you have successfully run the app, let's make changes!
-
-Open `App.tsx` in your text editor of choice and make some changes. When you save, your app will automatically update and reflect these changes — this is powered by [Fast Refresh](https://reactnative.dev/docs/fast-refresh).
-
-When you want to forcefully reload, for example to reset the state of your app, you can perform a full reload:
-
-- **Android**: Press the <kbd>R</kbd> key twice or select **"Reload"** from the **Dev Menu**, accessed via <kbd>Ctrl</kbd> + <kbd>M</kbd> (Windows/Linux) or <kbd>Cmd ⌘</kbd> + <kbd>M</kbd> (macOS).
-- **iOS**: Press <kbd>R</kbd> in iOS Simulator.
-
-## Congratulations! :tada:
-
-You've successfully run and modified your React Native App. :partying_face:
-
-### Now what?
-
-- If you want to add this new React Native code to an existing application, check out the [Integration guide](https://reactnative.dev/docs/integration-with-existing-apps).
-- If you're curious to learn more about React Native, check out the [docs](https://reactnative.dev/docs/getting-started).
-
-# Troubleshooting
-
-If you're having issues getting the above steps to work, see the [Troubleshooting](https://reactnative.dev/docs/troubleshooting) page.
-
-# Learn More
-
-To learn more about React Native, take a look at the following resources:
-
-- [React Native Website](https://reactnative.dev) - learn more about React Native.
-- [Getting Started](https://reactnative.dev/docs/environment-setup) - an **overview** of React Native and how setup your environment.
-- [Learn the Basics](https://reactnative.dev/docs/getting-started) - a **guided tour** of the React Native **basics**.
-- [Blog](https://reactnative.dev/blog) - read the latest official React Native **Blog** posts.
-- [`@facebook/react-native`](https://github.com/facebook/react-native) - the Open Source; GitHub **repository** for React Native.
+This project is licensed under the MIT License.
