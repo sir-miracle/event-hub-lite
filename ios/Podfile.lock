@@ -1778,7 +1778,7 @@ PODS:
     - Yoga
   - react-native-netinfo (11.4.1):
     - React-Core
-  - react-native-safe-area-context (5.6.1):
+  - react-native-safe-area-context (5.5.1):
     - boost
     - DoubleConversion
     - fast_float
@@ -1796,8 +1796,8 @@ PODS:
     - React-graphics
     - React-ImageManager
     - React-jsi
-    - react-native-safe-area-context/common (= 5.6.1)
-    - react-native-safe-area-context/fabric (= 5.6.1)
+    - react-native-safe-area-context/common (= 5.5.1)
+    - react-native-safe-area-context/fabric (= 5.5.1)
     - React-NativeModulesApple
     - React-RCTFabric
     - React-renderercss
@@ -1808,7 +1808,7 @@ PODS:
     - ReactCommon/turbomodule/core
     - SocketRocket
     - Yoga
-  - react-native-safe-area-context/common (5.6.1):
+  - react-native-safe-area-context/common (5.5.1):
     - boost
     - DoubleConversion
     - fast_float
@@ -1836,7 +1836,7 @@ PODS:
     - ReactCommon/turbomodule/core
     - SocketRocket
     - Yoga
-  - react-native-safe-area-context/fabric (5.6.1):
+  - react-native-safe-area-context/fabric (5.5.1):
     - boost
     - DoubleConversion
     - fast_float
@@ -2807,7 +2807,7 @@ SPEC CHECKSUMS:
   React-microtasksnativemodule: b0fb3f97372df39bda3e657536039f1af227cc29
   react-native-image-picker: 43e6cd4231e670030fe09b079d696fa5a634ccfc
   react-native-netinfo: f0a9899081c185db1de5bb2fdc1c88c202a059ac
-  react-native-safe-area-context: 6d8a7b750e496e37bda47c938320bf2c734d441f
+  react-native-safe-area-context: 516001332a629003ba094d073a888a306e84d2f4
   react-native-sqlite-storage: f6d515e1c446d1e6d026aa5352908a25d4de3261
   React-NativeModulesApple: 9ec9240159974c94886ebbe4caec18e3395f6aef
   React-oscompat: b12c633e9c00f1f99467b1e0e0b8038895dae436

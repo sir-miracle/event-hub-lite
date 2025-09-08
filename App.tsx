@@ -28,7 +28,14 @@ function App() {
 
   if (!isDatabaseReady) {
     return (
-      <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center', backgroundColor: Colors.background }}>
+      <View
+        style={{
+          flex: 1,
+          justifyContent: 'center',
+          alignItems: 'center',
+          backgroundColor: Colors.background,
+        }}
+      >
         <ActivityIndicator size="large" color={Colors.primaryBlue} />
       </View>
     );
@@ -38,7 +45,7 @@ function App() {
     <SafeAreaProvider>
       <Provider store={store}>
         <NavigationContainer>
-          <StatusBar barStyle="dark-content" />
+          <StatusBar barStyle="dark-content" backgroundColor={Colors.white} />
           <MainApp />
         </NavigationContainer>
       </Provider>
